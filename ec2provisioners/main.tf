@@ -1,0 +1,6 @@
+resource "aws_instance" "my" {
+  ami = "ami-0453ec754f44f9a4a"
+  key_name = "newkey"
+  instance_type = "t2.micro"
+  user_data = file ("file.sh")
+}
